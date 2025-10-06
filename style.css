@@ -33,12 +33,14 @@ body{
     padding: 25px 35px;
 }
 .logo-image{
-    width: 50%;
-    max-width: 220px;
+    margin-left: 5vw;
 }
 .main{
     display: flex;
     justify-content: center;
+}
+.main-image{
+    width:50vw;
 }
 .main-text{
     display: flex;
@@ -73,6 +75,76 @@ body{
     /* height: 5vh; */
     display: flex;
     justify-content: flex-end;
-    margin: 2vw;
-    
+    padding: 0 2vw 2vw 2vw;     
+}
+.facebook{
+    margin-right: 2vw;
+    transform: scale(2);
+}
+.twitter{
+    margin-right: 2vw;
+    transform: scale(2);
+
+}
+.instagram{
+    margin-right: 2vw;
+    transform: scale(2);
+
+}
+
+.facebook i:hover{
+    color: rgb(215, 120, 215);
+    transition: 0.5s;
+}
+.twitter i:hover{
+    color: rgb(215, 120, 215);
+    transition: 0.5s;
+
+}
+.instagram i:hover{
+    color: rgb(215, 120, 215);
+    transition: 0.5s;
+
+}
+
+@media (max-width:375px){
+    body{
+        background-image: url("./images/bg-mobile.svg");
+    }
+    .page-container{
+        padding-left: 2vw;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main-image{
+        width:100%;
+        height:auto;
+        margin-left: 4px;
+    }
+    .main-text{
+        width: 100%;
+        height:auto;
+        font-size: 8px;
+    }
+    .button{
+        align-self: center;
+        font-size: 8px;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .facebook{
+        transform: scale(1);
+        margin-right: 5vw;
+        margin-left: 4vw;
+    }
+    .twitter{
+        transform: scale(1);
+        margin-right: 5vw;
+    }
+    .instagram{       
+        transform: scale(1);
+    }
+
 }
